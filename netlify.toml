@@ -1,6 +1,0 @@
-#https://stackoverflow.com/questions/58065603/netlify-renders-404-on-page-refresh-using-react-and-react-router 
-[[redirects]]
-/home              /
-/blog/my-post.php  /%postname%/
-/news              /blog
-/cuties            https://www.magprohealth.com
