@@ -1,5 +1,6 @@
 #https://stackoverflow.com/questions/58065603/netlify-renders-404-on-page-refresh-using-react-and-react-router 
 [[redirects]]
-  from = "/posts"
-  to = "/posts"
-  status = 200
+  /home              /
+/blog/my-post.php  /blog/my-post
+/news              /blog
+/cuties            https://www.magprohealth.com
