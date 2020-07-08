@@ -39,7 +39,14 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.magprohealth.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.magprohealth.com/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 5.4.2" />
-<style type="text/css">html, body {font-size:14px;line-height:1.2;}.entry-content a:not([class]), a:active, a:focus, a:hover{color:#bf9e3b}.social-navigation.theme-colors,
+		<!-- Custom Logo: hide header text -->
+		<style id="custom-logo-css" type="text/css">
+			.site-title, .site-description {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
+			}
+		</style>
+		<style type="text/css">html, body {font-size:14px;line-height:1.2;}.entry-content a:not([class]), a:active, a:focus, a:hover{color:#bf9e3b}.social-navigation.theme-colors,
 		.comments-area .comments-list .comment .comment-meta .comment-header .comment-reply,
 		.entry .entry-header .entry-meta .entry-cat,
 		.entry .entry-quote-author,
@@ -107,9 +114,13 @@ img.emoji {
 	}
    </style><script> 
 	var RTL = false;
-	</script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>  
+	</script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://www.magprohealth.com/wp-content/uploads/2020/07/cropped-5757-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.magprohealth.com/wp-content/uploads/2020/07/cropped-5757-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.magprohealth.com/wp-content/uploads/2020/07/cropped-5757-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.magprohealth.com/wp-content/uploads/2020/07/cropped-5757-1-270x270.png" />
+  
 </head>
-<body id="site-body" class="home blog theme-header4">
+<body id="site-body" class="home blog wp-custom-logo theme-header4">
 <div class="site-mobile-navigation"></div>
 <div class="site-wrapper  shadow-wrapper">
 		<header id="site-header" class="site-header">
@@ -121,7 +132,10 @@ img.emoji {
 					
 											</div>
 					
-									</div>
+					
+		<div class="site-header-top-right site-column-3">
+			<nav id="social-navigation" class="social-navigation default-colors"><ul><li><a href="https://www.facebook.com/HealthMagzinePro" target="_blank"><span class="fa fa-facebook"></span></a></li><li><a href="https://twitter.com/healthmagazin11" target="_blank"><span class="fa fa-twitter"></span></a></li><li><a href="https://www.instagram.com/healthmagpro" target="_blank"><span class="fa fa-instagram"></span></a></li><li><a href="https://www.pinterest.com/HealthMagPro2" target="_blank"><span class="fa fa-pinterest-p"></span></a></li></ul></nav>
+		</div>				</div>
 			</div>
 		</div>
 		
@@ -131,9 +145,7 @@ img.emoji {
 					<div class="site-header-middle-center">
 						<div class="site-brand">
 												
-							<h1 class="site-heading">							<a href="https://www.magprohealth.com/" rel="home">health magazine</a>
-							</h1>														<p class="site-tagline">Un site utilisant WordPress</p>
-							
+							<h1 class="site-logo">							<a href="https://www.magprohealth.com/" class="custom-logo-link" rel="home"><img width="272" height="90" src="https://www.magprohealth.com/wp-content/uploads/2020/07/cropped-home-1.png" class="custom-logo" alt="health magazine" /></a>							</h1>							
 												
 					
 												
@@ -285,7 +297,7 @@ img.emoji {
 <footer id="site-footer" class="site-footer">
 		<div class="site-footer-bottom">
 		<div class="site-container text-center">
-						
+			Magazine of health			
 			Thème de			<a href="http://www.scissorthemes.com/" traget="_blank">Scissor Themes</a>
 			Fourni par			<a href="https://wordpress.org/" traget="_blank">WordPress</a>
 			
