@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
-<head>
-	<!--[if IE]>
-	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=edge" /><![endif]-->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if IE 9]><html class="no-js ie9" lang="fr-FR"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="fr-FR"><!--<![endif]-->
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  
 	<title>health magazine &#8211; Un site utilisant WordPress</title>
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="health magazine &raquo; Flux" href="https://www.magprohealth.com/feed/" />
 <link rel="alternate" type="application/rss+xml" title="health magazine &raquo; Flux des commentaires" href="https://www.magprohealth.com/comments/feed/" />
@@ -31,117 +31,230 @@ img.emoji {
 }
 </style>
 	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.magprohealth.com/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2' type='text/css' media='all' />
-<link rel='stylesheet' id='basic-fonts-css'  href='//fonts.googleapis.com/css?family=PT+Serif%3A400%2C700%7COpen+Sans%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Ccyrillic&#038;ver=1' type='text/css' media='all' />
-<link rel='stylesheet' id='basic-style-css'  href='https://www.magprohealth.com/wp-content/themes/basic/style.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='WRT-style-css'  href='https://www.magprohealth.com/wp-content/themes/writee/style.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='WRT-main-style-css'  href='https://www.magprohealth.com/wp-content/themes/writee/assets/css/style-ltr.css?ver=5.4.2' type='text/css' media='all' />
 <script type='text/javascript' src='https://www.magprohealth.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
 <script type='text/javascript' src='https://www.magprohealth.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 <link rel='https://api.w.org/' href='https://www.magprohealth.com/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.magprohealth.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.magprohealth.com/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 5.4.2" />
-<!-- BEGIN Customizer CSS -->
-<style type='text/css' id='basic-customizer-css'>a:hover,#logo,.bx-controls a:hover .fa{color:#2f5c17}a:hover{color:#2f5c17}blockquote,q,input:focus,textarea:focus,select:focus{border-color:#2f5c17}input[type=submit],input[type=button],button,.submit,.button,.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce #respond input#submit.alt:hover,.woocommerce a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover,#mobile-menu,.top-menu,.top-menu .sub-menu,.top-menu .children,.more-link,.nav-links a:hover,.nav-links .current,#footer{background-color:#2f5c17}@media screen and (max-width:1023px){.topnav{background-color:#2f5c17}}</style>
-<!-- END Customizer CSS -->
-<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css">html, body {font-size:14px;line-height:1.2;}.entry-content a:not([class]), a:active, a:focus, a:hover{color:#bf9e3b}.social-navigation.theme-colors,
+		.comments-area .comments-list .comment .comment-meta .comment-header .comment-reply,
+		.entry .entry-header .entry-meta .entry-cat,
+		.entry .entry-quote-author,
+		.widget.widget_recent-post .entry-list .entry .entry-meta .entry-cat, 
+		.widget.widget_popular-post .entry-list .entry .entry-meta .entry-cat, 
+		.widget.widget_posts .entry-list .entry .entry-meta .entry-cat, 
+		.widget.widget_posts .entry .entry-meta .entry-cat, 
+		.widget.widget_wrt_recent_posts .entry .entry-meta .entry-cat, 
+		.widget.widget_related_posts .entry .entry-meta .entry-cat,
+		.widget.widget_categories ul li a:hover,
+		.widget.widget_product_categories ul li a:hover,
+		.widget.widget_archive ul li a:hover,
+		.widget.widget_archives ul li a:hover,
+		.widget.widget_twitter .tweets-list .tweet a,
+		.widget.widget_recent_comments .recentcomments span a{ color :#bf9e3b}
+		.widget.widget_categories ul li a:before,
+		.widget.widget_nav_menu ul li a::before, 
+		.widget.widget_pages ul li a::before, 
+		.widget.widget_meta ul li a::before, 
+		.widget.widget_product_categories ul li a:before,
+		.widget.widget_archive ul li a:before, 
+		.widget.widget_archives ul li a:before {background-color: #bf9e3b }.widget.widget_tag_cloud .tagcloud a:hover {
+			color:#bf9e3b;
+			border-color:#bf9e3b}.pace-running .pace{background-color:#ffffff;}
+	.pace-done .pace{background-color:transparent;}
+	.pace {
+	  -webkit-pointer-events: none;
+	  pointer-events: none;
+
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  user-select: none;
+
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  z-index:9999;
+
+	  -webkit-transform: translate3d(0, -50px, 0);
+	  -ms-transform: translate3d(0, -50px, 0);
+	  transform: translate3d(0, -50px, 0);
+
+	  -webkit-transition: -webkit-transform .5s ease-out;
+	  -ms-transition: -webkit-transform .5s ease-out;
+	  transition: transform .5s ease-out;
+	}
+
+	.pace.pace-active {
+	  -webkit-transform: translate3d(0, 0, 0);
+	  -ms-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+
+	.pace .pace-progress {
+	  display: block;
+	  position: fixed;
+	  z-index: 2000;
+	  top: 0;
+	  right: 100%;
+	  width: 100%;
+	  height: 5px;
+	  background:#bf9e3b;
+	  pointer-events: none;
+	}
+   </style><script> 
+	var RTL = false;
+	</script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>  
 </head>
-<body class="home blog wp-custom-logo layout-rightbar">
-<div class="wrapper clearfix">
-
-		<!-- BEGIN header -->
-	<header id="header" class="clearfix">
-
-        <div class="header-top-wrap">
-        
-                        <div class="sitetitle maxwidth grid left">
-
-                <div class="logo">
-
-                                            <h1 id="logo">
-                    <img width="270" height="90" src="https://www.magprohealth.com/wp-content/uploads/2020/07/cropped-home.png" class="custom-logo custom-logo-" alt="health magazine" />health magazine                        </h1>
-                    
-                    
-                    
-                </div>
-                            </div>
-
-                </div>
-
-		        <div class="topnav">
-
-			<div id="mobile-menu" class="mm-active">Menu</div>
-
-			<nav>
-									<ul class="top-menu maxwidth clearfix">
-													<li class="page_item current_page_item"><span>Accueil</span></li>
-						<li class="page_item page-item-2"><a href="https://www.magprohealth.com/page-d-exemple/">Page d’exemple</a></li>
-					</ul>
-							</nav>
-
+<body id="site-body" class="home blog theme-header4">
+<div class="site-mobile-navigation"></div>
+<div class="site-wrapper  shadow-wrapper">
+		<header id="site-header" class="site-header">
+		<div class="site-header-top">
+			<div class="site-container">
+				<div class="site-row">
+					
+					<div class="site-header-top-left site-column-9">
+					
+											</div>
+					
+									</div>
+			</div>
 		</div>
 		
-	</header>
-	<!-- END header -->
-
-	
-
-	<div id="main" class="maxwidth clearfix">
-
-		<!-- BEGIN content -->
-	
-	<main id="content" class="content">
-	
-    
-
-<article class="post-15 post type-post status-publish format-standard category-non-classe anons">		<h2><a href="https://www.magprohealth.com/2020/07/07/15/" title=""></a></h2>
-		<aside class="meta"><span class="date">7 juillet 2020</span><span class="category"><a href="https://www.magprohealth.com/category/non-classe/" rel="category tag">Non classé</a></span><span class="comments"><a href="https://www.magprohealth.com/2020/07/07/15/#respond">Commentaires: 0</a></span><span class="author">magpro</span></aside>	<div class="entry-box clearfix" >
-
-		<p>;jsdklfjklsdjfksdjkjdkjfkdjskfjsdjfkdsjfksdjfkjoieuieuzruzepurpzeurze ijhihefizehiruzeiourpiozeuriujfskdjfksdjfdsfjkdlsjflksdjkfjsdklfjksdjfkljsdf djhfkdjkfljsmlkjijifjizejzpiejjkjfdsljfijsdfkljdslfkjlkjsdflskdjfsldfkjlsflljjllllllllllll kjdflksdjmf&rsquo;lkjsdklfjkljfkljdklsjfkldjsfkljkdljfdksjflkjksdjkfjdsjfsjdfjsjdjmsjdkfjskmldjf kjlkdjfkjiozoeiorzieozfjkd,vdfokfpzoeeookjokoppoofjdkjfkdjsklsjkldsjklfjskljfkljdklfjkl</p>
-		<p class="more-link-box">
-			<a class="more-link" href="https://www.magprohealth.com/2020/07/07/15/#more-15" title="">Lire plus</a>
-		</p>
-		
-	</div> 
-	</article>
-
-
-<article class="post-12 post type-post status-publish format-standard category-non-classe anons">		<h2><a href="https://www.magprohealth.com/2020/07/05/que-je-dois-faire-avec-vous/" title="que je dois  faire avec vous">que je dois  faire avec vous</a></h2>
-		<aside class="meta"><span class="date">5 juillet 2020</span><span class="category"><a href="https://www.magprohealth.com/category/non-classe/" rel="category tag">Non classé</a></span><span class="comments"><a href="https://www.magprohealth.com/2020/07/05/que-je-dois-faire-avec-vous/#respond">Commentaires: 0</a></span><span class="author">magpro</span></aside>	<div class="entry-box clearfix" >
-
-		<p>voici tout le monde qui nous regarde toujours dans les yeux de chacun de nous et ne respectent toujours persone soit moi sois autre personne du quartier je suis la toujours pour vous at votre petite famille qui ne cesse de me gaspiller la vie dans ma maison de mon oncle et mon petit frere &#8230;</p>
-		<p class="more-link-box">
-			<a class="more-link" href="https://www.magprohealth.com/2020/07/05/que-je-dois-faire-avec-vous/#more-12" title="que je dois  faire avec vous">Lire plus</a>
-		</p>
-		
-	</div> 
-	</article>
-
-
-<article class="post-1 post type-post status-publish format-standard category-non-classe anons">		<h2><a href="https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/" title="Bonjour tout le monde !">Bonjour tout le monde !</a></h2>
-		<aside class="meta"><span class="date">2 juillet 2020</span><span class="category"><a href="https://www.magprohealth.com/category/non-classe/" rel="category tag">Non classé</a></span><span class="comments"><a href="https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/#comments">Commentaires: 1</a></span><span class="author">magpro</span></aside>	<div class="entry-box clearfix" >
-
-		<p>Bienvenue sur WordPress. Ceci est votre premier article. Modifiez-le ou supprimez-le, puis commencez à écrire !</p>
-		<p class="more-link-box">
-			<a class="more-link" href="https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/#more-1" title="Bonjour tout le monde !">Lire plus</a>
-		</p>
-		
-	</div> 
-	</article>
-
-
-	
-		</main> 
-	<!-- END #content -->
-	
-
-<!-- BEGIN #sidebar -->
-<aside id="sidebar" class="block">
-	<ul id="widgetlist">
-
-    <li id="search-2" class="widget widget_search"><form method="get" class="searchform" action="https://www.magprohealth.com//">
-    <input type="text" value="" placeholder="Chercher" name="s" class="s" />
-    <input type="submit" class="submit search_submit" value="&raquo;" />
-</form>
-</li>		<li id="recent-posts-2" class="widget widget_recent_entries">		<p class="wtitle">Articles récents</p>		<ul>
+		<div class="site-header-bottom">
+			<div class="site-container">
+				<div class="site-row">
+					<div class="site-header-middle-center">
+						<div class="site-brand">
+												
+							<h1 class="site-heading">							<a href="https://www.magprohealth.com/" rel="home">health magazine</a>
+							</h1>														<p class="site-tagline">Un site utilisant WordPress</p>
+							
+												
+					
+												
+						<a href="https://www.magprohealth.com/" class="mobile-navigation-toggle"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </header><!-- / header -->	
+	<section class="site-main with-right-sidebar ">
+        <div class="site-container">
+            <div class="site-row">
+				<div class="site-content compact-view with-sidebar " id="site-content" role="main">
+				
+<div class="standard-container">
+	<article id="entry-15" class="post-15 post type-post status-publish format-standard hentry category-non-classe entry entry-center"style="text-align:center;">
+	<div class="entry-row">
+		<div class="entry-full-center">
+				<div class="entry-header">
+		<div class="entry-meta">
+			<span class="entry-cat"><a href="https://www.magprohealth.com/category/non-classe/" rel="category tag">Non classé</a></span>
+		</div>
+				<div class="entry-meta">
+			<span class="entry-author">Par <a href="https://www.magprohealth.com/author/magpro/" title="Articles par magpro" rel="author">magpro</a> </span>
+			<span class="entry-date">le <a href="https://www.magprohealth.com/2020/07/">mardi, juillet 7, 2020</a></span>
+		</div>
+	</div>			<div class="entry-content">
+				
+				<p>;jsdklfjklsdjfksdjkjdkjfkdjskfjsdjfkdsjfksdjfkjoieuieuzruzepurpzeurze ijhihefizehiruzeiourpiozeuriujfskdjfksdjfdsfjkdlsjflksdjkfjsdklfjksdjfkljsdf djhfkdjkfljsmlkjijifjizejzpiejjkjfdsljfijsdfkljdslfkjlkjsdflskdjfsldfkjlsflljjllllllllllll kjdflksdjmf&rsquo;lkjsdklfjkljfkljdklsjfkldjsfkljkdljfdksjflkjksdjkfjdsjfsjdfjsjdjmsjdkfjskmldjf kjlkdjfkjiozoeiorzieozfjkd,vdfokfpzoeeookjokoppoofjdkjfkdjsklsjkldsjklfjskljfkljdklfjkl</p>
+				
+			</div>
+			
+	<div class="entry-footer">
+				<div class="entry-footer-top">
+			<a href="https://www.magprohealth.com/2020/07/07/15/" title="" class="entry-button">Lire la suite</a>
+		</div>
+				<div class="entry-footer-bottom">
+			<div class="entry-share">
+				<ul><li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.magprohealth.com/2020/07/07/15/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span class="fa fa-facebook"></span></a></li><li><a href="http://twitter.com/share?text=&#038;url=https://www.magprohealth.com/2020/07/07/15/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><span class="fa fa-twitter"></span></a></li><li><a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https://www.magprohealth.com/2020/07/07/15/&#038;title=" onclick="window.open(this.href, 'linkedIn-share', 'width=550,height=550');return false;"><span class="fa fa-linkedin"></span></a></li><li><a href="#" onclick="window.open('http://pinterest.com/pin/create/button/?url=https://www.magprohealth.com/2020/07/07/15/&#038;media=&#038;description=', 'pinterest-share', 'width=490,height=530');return false;"><span class="fa fa-pinterest-p"></span></a></li></ul>			</div>
+			<div class="entry-comments">
+				<a href="https://www.magprohealth.com/2020/07/07/15/#respond"><span class="fa fa-comment"></span>
+					<span class="comments-counting">0</span>
+				</a>
+			</div>
+		</div>
+	</div>		</div>
+	</div>
+</article><article id="entry-12" class="post-12 post type-post status-publish format-standard hentry category-non-classe entry entry-center"style="text-align:center;">
+	<div class="entry-row">
+		<div class="entry-full-center">
+				<div class="entry-header">
+		<div class="entry-meta">
+			<span class="entry-cat"><a href="https://www.magprohealth.com/category/non-classe/" rel="category tag">Non classé</a></span>
+		</div>
+		<h2 class="entry-title"><a href="https://www.magprohealth.com/2020/07/05/que-je-dois-faire-avec-vous/">que je dois  faire avec vous</a></h2>		<div class="entry-meta">
+			<span class="entry-author">Par <a href="https://www.magprohealth.com/author/magpro/" title="Articles par magpro" rel="author">magpro</a> </span>
+			<span class="entry-date">le <a href="https://www.magprohealth.com/2020/07/">dimanche, juillet 5, 2020</a></span>
+		</div>
+	</div>			<div class="entry-content">
+				
+				<p>voici tout le monde qui nous regarde toujours dans les yeux de chacun de nous et ne respectent toujours persone soit moi sois autre personne du quartier je suis la toujours pour vous at votre petite famille qui ne cesse de me gaspiller la vie dans ma maison de mon oncle et mon petit frere &hellip;</p>
+				
+			</div>
+			
+	<div class="entry-footer">
+				<div class="entry-footer-top">
+			<a href="https://www.magprohealth.com/2020/07/05/que-je-dois-faire-avec-vous/" title="que je dois  faire avec vous" class="entry-button">Lire la suite</a>
+		</div>
+				<div class="entry-footer-bottom">
+			<div class="entry-share">
+				<ul><li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.magprohealth.com/2020/07/05/que-je-dois-faire-avec-vous/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span class="fa fa-facebook"></span></a></li><li><a href="http://twitter.com/share?text=que%20je%20dois%20%20faire%20avec%20vous&#038;url=https://www.magprohealth.com/2020/07/05/que-je-dois-faire-avec-vous/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><span class="fa fa-twitter"></span></a></li><li><a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https://www.magprohealth.com/2020/07/05/que-je-dois-faire-avec-vous/&#038;title=que%20je%20dois%20%20faire%20avec%20vous" onclick="window.open(this.href, 'linkedIn-share', 'width=550,height=550');return false;"><span class="fa fa-linkedin"></span></a></li><li><a href="#" onclick="window.open('http://pinterest.com/pin/create/button/?url=https://www.magprohealth.com/2020/07/05/que-je-dois-faire-avec-vous/&#038;media=&#038;description=que%20je%20dois%20%20faire%20avec%20vous', 'pinterest-share', 'width=490,height=530');return false;"><span class="fa fa-pinterest-p"></span></a></li></ul>			</div>
+			<div class="entry-comments">
+				<a href="https://www.magprohealth.com/2020/07/05/que-je-dois-faire-avec-vous/#respond"><span class="fa fa-comment"></span>
+					<span class="comments-counting">0</span>
+				</a>
+			</div>
+		</div>
+	</div>		</div>
+	</div>
+</article><article id="entry-1" class="post-1 post type-post status-publish format-standard hentry category-non-classe entry entry-center"style="text-align:center;">
+	<div class="entry-row">
+		<div class="entry-full-center">
+				<div class="entry-header">
+		<div class="entry-meta">
+			<span class="entry-cat"><a href="https://www.magprohealth.com/category/non-classe/" rel="category tag">Non classé</a></span>
+		</div>
+		<h2 class="entry-title"><a href="https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/">Bonjour tout le monde !</a></h2>		<div class="entry-meta">
+			<span class="entry-author">Par <a href="https://www.magprohealth.com/author/magpro/" title="Articles par magpro" rel="author">magpro</a> </span>
+			<span class="entry-date">le <a href="https://www.magprohealth.com/2020/07/">jeudi, juillet 2, 2020</a></span>
+		</div>
+	</div>			<div class="entry-content">
+				
+				<p>Bienvenue sur WordPress. Ceci est votre premier article. Modifiez-le ou supprimez-le, puis commencez à écrire !</p>
+				
+			</div>
+			
+	<div class="entry-footer">
+				<div class="entry-footer-top">
+			<a href="https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/" title="Bonjour tout le monde !" class="entry-button">Lire la suite</a>
+		</div>
+				<div class="entry-footer-bottom">
+			<div class="entry-share">
+				<ul><li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><span class="fa fa-facebook"></span></a></li><li><a href="http://twitter.com/share?text=Bonjour%20tout%20le%20monde !&#038;url=https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><span class="fa fa-twitter"></span></a></li><li><a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/&#038;title=Bonjour%20tout%20le%20monde !" onclick="window.open(this.href, 'linkedIn-share', 'width=550,height=550');return false;"><span class="fa fa-linkedin"></span></a></li><li><a href="#" onclick="window.open('http://pinterest.com/pin/create/button/?url=https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/&#038;media=&#038;description=Bonjour%20tout%20le%20monde !', 'pinterest-share', 'width=490,height=530');return false;"><span class="fa fa-pinterest-p"></span></a></li></ul>			</div>
+			<div class="entry-comments">
+				<a href="https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/#comments"><span class="fa fa-comment"></span>
+					<span class="comments-counting">1</span>
+				</a>
+			</div>
+		</div>
+	</div>		</div>
+	</div>
+</article></div>				</div>
+								<div class="site-sidebar " id="sidebar" role="complementary">
+					<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="search-form" action="https://www.magprohealth.com/">
+	<label class="screen-reader-text" for="s">
+	Chercher pour:	</label>
+	<input type="text" value="" placeholder="Faire une recherche" name="s" id="s" class="search-input" />
+	<label for="searchsubmit" class="fa fa-search search-submit-icon"></label>
+	<input type="submit" id="searchsubmit" value="Rechercher" class="search-submit" />
+</form></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h6 class="widget-title"><span>Articles récents</span></h6>		<ul>
 											<li>
 					<a href="https://www.magprohealth.com/2020/07/07/15/">(pas de titre)</a>
 									</li>
@@ -152,60 +265,49 @@ img.emoji {
 					<a href="https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/">Bonjour tout le monde !</a>
 									</li>
 					</ul>
-		</li><li id="recent-comments-2" class="widget widget_recent_comments"><p class="wtitle">Commentaires récents</p><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='https://wordpress.org/' rel='external nofollow ugc' class='url'>Un commentateur WordPress</a></span> dans <a href="https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/#comment-1">Bonjour tout le monde !</a></li></ul></li><li id="archives-2" class="widget widget_archive"><p class="wtitle">Archives</p>		<ul>
+		</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h6 class="widget-title"><span>Commentaires récents</span></h6><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='https://wordpress.org/' rel='external nofollow ugc' class='url'>Un commentateur WordPress</a></span> dans <a href="https://www.magprohealth.com/2020/07/02/bonjour-tout-le-monde/#comment-1">Bonjour tout le monde !</a></li></ul></aside><aside id="archives-2" class="widget widget_archive"><h6 class="widget-title"><span>Archives</span></h6>		<ul>
 				<li><a href='https://www.magprohealth.com/2020/07/'>juillet 2020</a></li>
 		</ul>
-			</li><li id="categories-2" class="widget widget_categories"><p class="wtitle">Catégories</p>		<ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h6 class="widget-title"><span>Catégories</span></h6>		<ul>
 				<li class="cat-item cat-item-1"><a href="https://www.magprohealth.com/category/non-classe/">Non classé</a>
 </li>
 		</ul>
-			</li><li id="meta-2" class="widget widget_meta"><p class="wtitle">Méta</p>			<ul>
+			</aside><aside id="meta-2" class="widget widget_meta"><h6 class="widget-title"><span>Méta</span></h6>			<ul>
 						<li><a href="https://www.magprohealth.com/wp-login.php">Connexion</a></li>
 			<li><a href="https://www.magprohealth.com/feed/">Flux des publications</a></li>
 			<li><a href="https://www.magprohealth.com/comments/feed/">Flux des commentaires</a></li>
 			<li><a href="https://fr.wordpress.org/">Site de WordPress-FR</a></li>			</ul>
-			</li>
-	</ul>
-</aside>
-<!-- END #sidebar -->
-
-</div> 
-<!-- #main -->
-
-
-<footer id="footer" class="">
-
-	
-	
-	    	<div class="copyrights maxwidth grid">
-		<div class="copytext col6">
-			<p id="copy">
-				<!--noindex--><a href="https://www.magprohealth.com/" rel="nofollow">health magazine</a><!--/noindex--> &copy; 2020				<br/>
-				<span class="copyright-text"></span>
-							</p>
+			</aside>				</div>
+							</div>
 		</div>
-
-		<div class="themeby col6 tr">
-			<p id="designedby">
-				Thème par				<!--noindex--><a href="https://wp-puzzle.com/" target="_blank" rel="external nofollow">WP Puzzle</a><!--/noindex-->
-			</p>
-						<div class="footer-counter"></div>
+	</section>
+	
+<footer id="site-footer" class="site-footer">
+		<div class="site-footer-bottom">
+		<div class="site-container text-center">
+						
+			Thème de			<a href="http://www.scissorthemes.com/" traget="_blank">Scissor Themes</a>
+			Fourni par			<a href="https://wordpress.org/" traget="_blank">WordPress</a>
+			
 		</div>
 	</div>
-    	
-</footer>
-
-
-</div> 
-<!-- .wrapper -->
-
-<a id="toTop">&#10148;</a>
-
-<!--[if lt IE 9]>
-<script type='text/javascript' src='https://www.magprohealth.com/wp-content/themes/basic/js/html5shiv.min.js?ver=3.7.3'></script>
-<![endif]-->
-<script type='text/javascript' src='https://www.magprohealth.com/wp-content/themes/basic/js/functions.js?ver=1'></script>
+	
+</footer><!-- / footer -->
+</div> <!-- / wrapper -->
+<div class="site-navigation-overlay"></div>
+<script type='text/javascript' src='https://www.magprohealth.com/wp-content/themes/writee/assets/js/pace.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://www.magprohealth.com/wp-content/themes/writee/assets/js/modernizr.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://www.magprohealth.com/wp-content/themes/writee/assets/js/cssua.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://www.magprohealth.com/wp-content/themes/writee/assets/js/slick.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://www.magprohealth.com/wp-content/themes/writee/assets/js/jquery.fitvids.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://www.magprohealth.com/wp-content/themes/writee/assets/js/jquery.scrollUp.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://www.magprohealth.com/wp-content/themes/writee/assets/js/main.js?ver%5B0%5D=jquery'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function($){
+				jQuery("#site-banner-carousel").slick({ dots: true, infinite: true,slidesToShow: 1,  slidesToScroll: 1, autoplay: true,autoplaySpeed: 5000, pauseOnHover: true,
+				arrows: true,prevArrow : '<span class="slick-prev"></span>',nextArrow : '<span class="slick-next"></span>',customPaging: function(slider, i) {return '<span>' + (i + 1) + '</span>';},cssEase: 'ease-in-out', easing: 'ease-in-out',lazyLoad: true,
+				rtl: RTL,responsive: [{ breakpoint: 1200, settings: {	slidesToShow: 1  }}]});});
+</script>
 <script type='text/javascript' src='https://www.magprohealth.com/wp-includes/js/wp-embed.min.js?ver=5.4.2'></script>
-
 </body>
 </html>
